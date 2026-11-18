@@ -2,9 +2,6 @@ import math
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import altair as alt
-alt.data_transformers.disable_max_rows()
-
 class PositionalEncoding(nn.Module):
     def __init__(self, d_model, dropout, max_len=5000):
         super().__init__()
